@@ -1,0 +1,64 @@
+import java.io*;
+import java.io.IOException;
+import java,util,*;
+
+public class fileOrg{
+  public static void main(String[]args)
+{
+  try{file myObj=new
+File("Usman2001159.txt");
+    if (myObj.createnewFile())
+    {
+    System.out.printIn("File created:"
++myObj.getName());
+
+
+        //To read the write content on the file...........
+       
+        fileWriter myWritern =new
+      FileWriter("Usman2001159.txt");
+ 
+																																																																																				
+      system.out.println("Enter the content for file");
+             Scanner sc=new 
+           Scanner(System.in);
+             String str=sc.next Line();
+             myWriter.write(str);
+             myWriter.close();
+
+             // To show the output of the file
+             
+
+             system.out.println("The content of the files are as follows");
+             string line =null;
+             FileReader FileReader =new 
+          FileReader("Usman2001159,txt");
+
+             BufferedReader bufferedReader=
+            new BufferedReader(fileReader);
+           
+
+         While(line=
+      bufferedReader.readLine())!=null)
+           {
+             System.out.println(line);
+           }
+           /*alway close the file after use
+          */
+             bufferedReader.close*();
+             
+             }
+             else{
+                system.otot.println("file allredy exists.");
+                 } 
+                }
+                 catch (l0Exceptino e) {
+                  system.out.println("An error occurred.");
+                   e,printstackTrace();
+              
+
+
+                   }
+                  }
+                 }
+    
